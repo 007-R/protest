@@ -1,0 +1,277 @@
+.mypage{
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin:10px auto;
+}
+
+.user_name{
+    width:100%;
+    align-items: right;
+    margin-top:-50px;
+}
+
+.reservation_info{
+    width:40%;
+}
+
+.reserve_card{
+    background-color: rgb(45, 83, 198);
+    width:20rem;
+    height:17rem;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.reserve_info_area{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.indivisual_info{
+    margin-top:-30px;
+    color:white;
+    border-collapse: separate;
+    border-spacing: 10px 3px;
+}
+
+.card_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_title{
+    color:white;
+    margin-left:70px;
+    height:3rem;
+    width:7rem;
+}
+
+.card_title::before {
+    content: "";
+    background: url(icon/clock.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    top: 25px;
+    display: inline-block;
+    position: absolute;
+    background-size: cover;
+}
+
+.cancel{
+    margin-top:20px;
+    width:50px;
+}
+
+.cancel_button {
+    font-size: 100%;
+    font-weight: bold;
+    border: 1px solid white;
+    color:blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 1.3em;
+    line-height: 1.3em;
+    cursor: pointer;
+    transition: .2s;
+    margin:auto auto 50px 10px;
+}
+
+.cancel_button:hover {
+    background: #333;
+    border-color: #333;
+    color: #FFF;
+}
+
+.button_area{
+    width:80%;
+}
+
+.action_button{
+    width:100px;
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+    display:block;
+}
+
+.payment{
+    color:white;
+}
+
+.payment_input{
+    width:6rem;
+    margin:5px 0px;
+}
+
+
+.favorite_title{
+    width:100%;
+}
+
+.shop_table {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:2rem;
+}
+
+.shop_card {
+    border-radius: 5px;
+    width: 14rem;
+    height: 14rem;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+}
+
+.shop_image img {
+    width: 100%;
+    height: 120px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.shop_info {
+    width: 90%;
+    margin: 0px 5%;
+    line-height: 10px;
+}
+
+.shop_name {
+    font-size: 1rem;
+}
+
+.shop_area,
+.shop_genre {
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-top: 0px;
+}
+
+.to_detail{
+    margin-top:-10px;
+}
+
+.to_detail_comment {
+    color: white;
+    text-decoration: none;
+    font-size: 0.5rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: blue;
+}
+
+.favorite{
+    margin-top:-10px;
+}
+
+input{
+        width: 2rem;
+        height: 2rem;
+    }
+
+.function {
+    padding-top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5%;
+}
+
+
+@media screen and (max-width: 768px) {
+    h2, h3 {
+        font-size:1rem;
+    }
+    .mypage {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 10px auto;
+    }
+    .reservation_info {
+        border: solid 1px black;
+        width: 10rem;
+    }
+    .reserve_card {
+        background-color: rgb(45, 83, 198);
+        width: 100%;
+        height: 18rem;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px black;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .shop_card {
+        border-radius: 5px;
+        width: 8rem;
+        height:8rem;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 5px black;
+        background-color: white;
+    }
+    .shop_image img {
+        width: 100%;
+        height: 4rem;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .shop_name{
+        font-size:0.3rem;
+    }
+    .shop_area,
+    .shop_genre {
+        display: inline-block;
+        font-size: 0.3rem;
+        margin-top: 0px;
+    }
+    th, tr{
+        font-size: 1px;
+    }
+    .button_area {
+        margin-top:1rem;
+        width: 70%;
+        display:block;
+    }
+    .action_button{
+        width: 5rem;
+        background-color:blue;
+        color: white;
+        font-size:0.5rem;
+        border-radius: 5px;
+        display:block;
+    }
+    .to_detail_comment {
+        color: white;
+        text-decoration: none;
+        font-size: 0.5rem;
+        margin-left: 5px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: blue;
+        margin-bottom:5px;
+    }
+
+    input {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .favorite_title {
+        width: 100%;
+        margin-top:-3rem;
+    }
+}

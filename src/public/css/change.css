@@ -1,0 +1,78 @@
+.mypage {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.card_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_title {
+    color: white;
+    margin-left: 70px;
+    height: 3rem;
+    width: 7rem;
+}
+
+.card_title::before {
+    content: "";
+    background: url(icon/clock.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    top: 25px;
+    display: inline-block;
+    position: absolute;
+    background-size: cover;
+}
+
+.info_contents{
+    margin-top:3rem;
+}
+
+.reservation_info {
+    /*border: solid 1px black;*/
+    width: 25rem;
+}
+
+.reserve_card {
+    background-color: rgb(45, 83, 198);
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.indivisual_info {
+    margin-top: -30px;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+
+input,select {
+    margin-left: 20px;
+    height: 30px;
+    width: 100%;
+}
+
+.card_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change_button{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    padding:10px;
+    background-color:blue;
+    color:white;
+    border-radius:5px;
+}

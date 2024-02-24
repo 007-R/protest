@@ -1,0 +1,94 @@
+.register-form{
+    width: 30%;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 10px 10px 10px black;
+    position: relative;
+    background-color: white;
+}
+
+.register_title{
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.input_space{
+    position:relative;
+}
+
+.name_input::before {
+    content: "";
+    background: url(icon/user.png) no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 15%;
+    top: 1rem;
+    display: inline-block;
+    position: absolute;
+    background-size: cover;
+}
+
+.email_input::before {
+    content: "";
+    background: url(icon/email.png) no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 15%;
+    top: 1rem;
+    display: inline-block;
+    position: absolute;
+    background-size: cover;
+}
+
+.password_input::before {
+    content: "";
+    background: url(icon/password.png) no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 15%;
+    top: 1rem;
+    display: inline-block;
+    position: absolute;
+    background-size: cover;
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #999;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0px 10px auto;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.form__error {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .register-form {
+        width: 90%;
+        margin: 50px auto;
+        text-align: center;
+        box-shadow: 10px 10px 10px black;
+        position: relative;
+    }
+}

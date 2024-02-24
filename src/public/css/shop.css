@@ -1,0 +1,160 @@
+.search_table{
+    width:60%;
+    text-align: right;
+    margin:-100px 15% 0px auto;
+    padding:30px 0px;
+}
+
+.shop_sort {
+    height: 3rem;
+    width: 10rem;
+    margin-right: 10px;
+}
+
+
+.area_search, .genre_search{
+    height:3rem;
+    width:7rem;
+    margin-right:-5px;
+}
+
+.search_box{
+    height: 3rem;
+    width: 8rem;
+}
+
+.shop_table {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop_card{
+    border-radius: 5px;
+    width:14rem;
+    height:14rem;
+    margin-right:30px;
+    margin-bottom:30px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+}
+
+.shop_image img{
+    width:100%;
+    height: 120px;
+    border-radius: 5px 5px 0px 0px ;
+}
+
+.shop_info{
+    width:90%;
+    margin:0px 5%;
+    line-height:10px;
+}
+
+.shop_name{
+    font-size:1rem;
+}
+
+.shop_area, .shop_genre{
+    display:inline-block;
+    font-size: 0.7rem;
+    margin-top:0px;
+}
+
+
+.to_detail_comment{
+    color:white;
+    text-decoration:none;
+    font-size:0.5rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: blue;
+}
+
+.function{
+    padding-top:0px;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5%;
+}
+
+input{
+    width:2rem;
+    height:2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    h2,
+    h3 {
+        font-size: 1rem;
+    }
+
+    .search_table {
+        width: 15%;
+        text-align: lett;
+        margin: -100px 20% 0px auto;
+        padding: 10px 0px;
+    }
+
+    select, .search_box{
+        height: 1rem;
+        width: 4rem;
+        margin-right: -5px;
+        font-size: 1px;
+    }
+
+    .shop_card {
+        border-radius: 5px;
+        width: 8rem;
+        height: 8rem;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 5px black;
+        background-color: white;
+    }
+
+    .shop_image img {
+        width: 100%;
+        height: 4rem;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .shop_name {
+        font-size: 0.3rem;
+    }
+
+    .shop_area,
+    .shop_genre {
+        display: inline-block;
+        font-size: 0.3rem;
+        margin-top: 0px;
+    }
+
+    th,
+    tr {
+        font-size: 1px;
+    }
+
+    .button_area {
+        margin-top: 1rem;
+        width: 70%;
+        display: block;
+    }
+
+    .to_detail_comment {
+        color: white;
+        text-decoration: none;
+        font-size: 0.5rem;
+        margin-left: 5px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: blue;
+        margin-bottom: 5px;
+    }
+
+}

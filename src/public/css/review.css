@@ -1,0 +1,270 @@
+.input_flame {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info_area{
+    width:30%;
+    position:relative;
+}
+
+.info_area::after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0 1rem;
+    content: "";
+    width: 1px;
+    /*--縦線の太さ(幅)--*/
+    height: 100%;
+    background-color:grey;
+    /*--縦線の色--*/
+}
+
+.question{
+    display:inline;
+    font-size: 1rem;
+}
+
+.shop_table {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop_card{
+    border-radius: 5px;
+    width:14rem;
+    height:14rem;
+    margin-right:30px;
+    margin-bottom:30px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+}
+
+.shop_image img{
+    width:100%;
+    height: 120px;
+    border-radius: 5px 5px 0px 0px ;
+}
+
+.shop_info{
+    width:90%;
+    margin:0px 5%;
+    line-height:10px;
+}
+
+.shop_name{
+    font-size:1rem;
+}
+
+.shop_area, .shop_genre{
+    display:inline-block;
+    font-size: 0.7rem;
+    margin-top:0px;
+}
+
+.to_detail_comment{
+    color:white;
+    text-decoration:none;
+    font-size:0.5rem;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: blue;
+}
+
+.function{
+    padding-top:0px;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5%;
+}
+
+.heart{
+    width:2rem;
+    height:2rem;
+}
+
+
+.input_area{
+    width:40%;
+}
+
+
+
+.rate-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rate-form input[type=radio] {
+    display: none;
+}
+
+.rate-form label {
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.rate-form label:hover {
+    color:blue;
+}
+
+.rate-form label:hover~label {
+    color:blue;
+    }
+
+.rate-form input[type=radio]:checked~label {
+    color: blue;
+}
+
+
+.review_comment{
+    width:100%;
+    height:10rem;
+    background-color:rgb(219, 218, 218);
+    border: 1px dashed black;
+}
+
+.char_count{
+    text-align: right;
+    font-size: 12px;;
+}
+
+
+.drop-area {
+    background-color: #F0F0F0 !important;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.drop-area label {
+    width: 100%;
+    display: inline-block;
+}
+
+.drop-area label:hover {
+    cursor: pointer;
+}
+
+.drop-area label input {
+    display: none;
+}
+
+.drop-area label svg {
+    width: 50px;
+    fill: currentColor;
+    color: #909090;
+}
+
+.drop-area label .preview-area {
+    width: 75%;
+    margin: 15px auto;
+    height: 50px;
+}
+
+.drop-area label .preview-area img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+.button_area{
+    text-align: center;
+}
+
+.review_button{
+    padding:10px 150px;
+    color:black;
+    border:none;
+    background-color: white;
+    border-radius: 20px;;
+    margin-top:20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.error_message{
+    color:red;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    h2,
+    h3 {
+        font-size: 1rem;
+    }
+
+    .search_table {
+        width: 15%;
+        text-align: lett;
+        margin: -100px 20% 0px auto;
+        padding: 10px 0px;
+    }
+
+    select, .search_box{
+        height: 1rem;
+        width: 4rem;
+        margin-right: -5px;
+        font-size: 1px;
+    }
+
+    .shop_card {
+        border-radius: 5px;
+        width: 8rem;
+        height: 8rem;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 5px black;
+        background-color: white;
+    }
+
+    .shop_image img {
+        width: 100%;
+        height: 4rem;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .shop_name {
+        font-size: 0.3rem;
+    }
+
+    .shop_area,
+    .shop_genre {
+        display: inline-block;
+        font-size: 0.3rem;
+        margin-top: 0px;
+    }
+
+    th,
+    tr {
+        font-size: 1px;
+    }
+
+    .button_area {
+        margin-top: 1rem;
+        width: 70%;
+        display: block;
+    }
+
+    .to_detail_comment {
+        color: white;
+        text-decoration: none;
+        font-size: 0.5rem;
+        margin-left: 5px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: blue;
+        margin-bottom: 5px;
+    }
+
+
+}

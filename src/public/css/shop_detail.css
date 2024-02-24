@@ -1,0 +1,140 @@
+.shop_detail{
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin:10px auto;
+}
+
+.shop_info{
+    width:30rem;
+    overflow: scroll;
+    height:35rem;
+}
+
+.info_top{
+    display: flex;
+    justify-content: around;
+}
+
+.button_space{
+    margin-top:10px;
+    width:60px;
+}
+
+.return_button{
+    width:40px;
+    height:40px;
+    font-size: 30px;
+    border-radius: 5px;;
+    border:none;
+    box-shadow: 5px 5px 5px black;
+    background-color:white;
+    color:black;
+}
+
+.shop_info img {
+    width: 100%;
+}
+
+.review_function{
+    font-size: 12px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.all_comments {
+    background-color:#2d53c6;
+    color:white;
+    width: 100%;
+    list-style: none;
+    display:block;
+}
+
+.open_comments{
+    display:block;
+    text-align: center;
+}
+
+
+.delete_function{
+    font-size:12px;
+    background:none;
+    color:blue;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+
+.rate-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0 5px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.blue_star{
+    color:blue;
+}
+
+.reservation{
+    width:30rem;
+    background-color: #2d53c6;
+    border-radius:5px;
+    position:relative;
+    margin-top:-100px;
+}
+
+.function_title{
+    color:white;
+    margin-left:20px;
+}
+
+input, select{
+    margin-left: 20px;
+    margin-bottom:20px;
+    height:30px;
+    width:80%;
+}
+
+.confirmation_board{
+    width:80%;
+    height:200px;
+    background-color:rgba(0, 110, 255, 0.854);
+    margin-left:20px;
+}
+
+.reservation_button{
+    color:white;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    padding:10px;
+    background-color: blue;
+    border-radius:0 0 10px 10px;
+}
+button{
+    width:100%;
+    background-color:blue;
+    border:none;
+    color:white;
+    font-size:20px;
+}
+
+.confirmation_table{
+    color:white;
+}
+
+.error_message{
+    margin-left:20px;
+    margin-top:-20px;
+    color:red;
+}
+
+
+.output{
+    color:white;
+}
