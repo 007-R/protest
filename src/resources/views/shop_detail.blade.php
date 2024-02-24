@@ -41,32 +41,34 @@
                 </form>
             </div>
             <div class='review_abstract'>
+                <?php $num = $user_review['score'] -1 ?>
+                <span>{{ $score_description[$num]['description']}}</span>
                 <div class="rate-form">
-                @if($review['score']==1)
+                @if($user_review['score']==1)
                     <label for="star5">★</label>
                     <label for="star4">★</label>
                     <label for="star3">★</label>
                     <label for="star2">★</label>
                     <label class='blue_star' for="star1">★</label>
-                @elseif($review['score']==2)
+                @elseif($user_review['score']==2)
                     <label for="star5">★</label>
                     <label for="star4">★</label>
                     <label for="star3">★</label>
                     <label class='blue_star' for="star2">★</label>
                     <label class='blue_star' for="star1">★</label>
-                @elseif($review['score']==3)
+                @elseif($user_review['score']==3)
                     <label for="star5">★</label>
                     <label for="star4">★</label>
                     <label class='blue_star' for="star3">★</label>
                     <label class='blue_star' for="star2">★</label>
                     <label class='blue_star' for="star1">★</label>
-                @elseif($review['score']==4)
+                @elseif($user_review['score']==4)
                     <label for="star5">★</label>
                     <label class='blue_star' for="star4">★</label>
                     <label class='blue_star' for="star3">★</label>
                     <label class='blue_star' for="star2">★</label>
                     <label class='blue_star' for="star1">★</label>
-                @elseif($review['score']==5)
+                @elseif($user_review['score']==5)
                     <label class='blue_star' for="star5">★</label>
                     <label class='blue_star' for="star4">★</label>
                     <label class='blue_star' for="star3">★</label>
@@ -74,7 +76,7 @@
                     <label class='blue_star' for="star1">★</label>
                 @endif
                 </div>
-                <p>{{ $review['comment'] }}</p>
+                <p>{{ $user_review['comment'] }}</p>
             </div>
             @endif
         @endif

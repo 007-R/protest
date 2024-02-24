@@ -87,7 +87,6 @@ class AdminController extends Controller
 
         $header = collect($shop->csvHeader());
         $uploadedHeader = collect(explode(",", $uploadedData->shift()));
-        dd($uploadedHeader);
         if ($header->count() !== $uploadedHeader->count()) {
             return redirect('/admin')->with('message', 'Error:ヘッダーが一致しません');
         }

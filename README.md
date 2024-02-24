@@ -1,6 +1,5 @@
 #アプリケーション名
 Rese
-![image](https://github.com/007-R/mogi2_Q/assets/66697562/5cffcdf2-0378-47c7-b051-dda4f01f712c)
 
 #目的
 飲食店予約サービス
@@ -42,31 +41,22 @@ http://127.0.0.1
 #使用技術
 laravel8
 
-#テーブル設計
-
-![image](https://github.com/007-R/mogi2_Q/assets/66697562/86faf98d-1cf2-4ef2-9dff-c752cb078d82)
-
-![image](https://github.com/007-R/mogi2_Q/assets/66697562/7b1cea60-af03-4f12-a3b4-1c3738500afc)
-
-![image](https://github.com/007-R/mogi2_Q/assets/66697562/aea35c58-dd58-4d46-9b80-33daf6c9d97e)
-
-![image](https://github.com/007-R/mogi2_Q/assets/66697562/c1c2d9f8-497f-475a-a70e-ef3f6020c352)
-
-
-
-
-#ER図
-
-![image](https://github.com/007-R/mogi2_Q/assets/66697562/09d83ea1-a529-4777-a0af-7515ccce925c)
-
 
 #環境構築
 1 docker環境構築（docker-compose up -d --build）
+
 ２　 ファイルインストール(composer update --ignore-platform-req=ext-gd (phpコンテナ内）)
+
 3 .envファイル作成（touch .envにてファイル作成後、別途送付する内容を転記）
-4 migration(docker-compose php artisan migrate(phpコンテナ内）) *無効の場合は、migrate:fresh
-5 seeding(docker-compose php artisan db:seed(phpコンテナ内）)
-6 storage (php artisan storage:link(phpコンテナ内）)
+
+4 storage/app/publicに以下リンク内の画像を格納
+https://drive.google.com/drive/folders/1SdU_ij84sd77fgcL6iNAKMYtQVPHKbuq?usp=sharing
+
+5 migration(docker-compose php artisan migrate(phpコンテナ内）) *無効の場合は、migrate:fresh
+
+6 seeding(docker-compose php artisan db:seed(phpコンテナ内）)
+
+7 storage (php artisan storage:link(phpコンテナ内）)
 
 
 
@@ -83,6 +73,7 @@ laravel8
 #CSVインポート機能の使い方
 
 csvファイルには以下４つのheaderに定められた項目を入力すること
+
 [name]店舗名（50文字以内）
 
 [area_id]1-3の数値を入力。各数値が示す項目は次の通り。
@@ -90,7 +81,7 @@ csvファイルには以下４つのheaderに定められた項目を入力す�
 （1東京都, 2大阪府, 3福岡県
 [genre_id]1-6の数値を入力。各数値が示す項目は次の通り。
 
-1寿司, 2焼肉, 3イタリアン, 4居酒屋 5ラーメン
+1寿司, 2焼肉, 3居酒屋, 4イタリアン 5ラーメン
 
 [description]店舗概要：400文字以内
 

@@ -8,6 +8,7 @@ use App\Models\Review;
 use App\Models\Area;
 use App\Models\Genre;
 use App\Models\Favorite;
+use App\Models\Score;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -32,8 +33,9 @@ class ShopController extends Controller
         $shop = Shop::find($id);
         $user_review = Review::where('shop_id', $id)->where('user_id', $user_id)->first();
         $all_review = Review::with('user')->where('shop_id', $id)->get();
+        $score_description = Score::all();
 
-        return view('shop_detail', compact('shop', 'user_review', 'all_review'));
+        return view('shop_detail', compact('shop', 'user_review', 'all_review', 'score_description'));
     }
     public function add(Request $request)
     {
